@@ -19,12 +19,12 @@
 			</a>
 			<input type="text" placeholder="Search" class="input input-bordered w-48 md:w-1/2" />
 		</div>
-		<div>
-			<button class="btn" onclick={toggle}>New Patient</button>
-		</div>
 	</div>
 	<div class="flex gap-2">
-		<div class="dropdown dropdown-end">
+		<div class="dropdown dropdown-end flex whitespace-nowrap">
+			<div class="mr-4 place-content-center">
+				<h4>Admin</h4>
+			</div>
 			<div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
 				<div class="w-10 rounded-full">
 					<img
@@ -34,7 +34,7 @@
 				</div>
 			</div>
 			<ul
-				tabindex="0"
+				tabindex="-1"
 				class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
 			>
 				<li>
@@ -46,7 +46,7 @@
 				<li><a href="/private/setting">Settings</a></li>
 				<li><a href="/theme">Theme</a></li>
 				<li><a href="/svelte-component">Components</a></li>
-				<li class="mt-6 border-t border-slate-100 p-2"><a>Logout</a></li>
+				<li class="mt-6 border-t border-slate-100 p-2"><a href="/">Logout</a></li>
 			</ul>
 		</div>
 	</div>

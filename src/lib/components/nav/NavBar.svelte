@@ -1,8 +1,18 @@
+<script>
+    const links = [
+        { name: 'dashboard', path: '/private'},
+        { name: 'Branches', path: '/private/branches'},
+        {name: 'partners', path: '/private/partners'},
+        {name: 'users', path: '/private/users'},
+        {name: 'labtest', path: '/private/labtests'},
+        {name: 'access control', path: '/private/access-control'}
+
+    ]
+</script>
+
+
 <nav class="flex flex-col gap-4">
-    <a href="/">Dashbaord</a>
-    <a href="/private/branches">Branches</a>
-    <a href="/private/partners">Partners</a>
-    <a href="/private/users">Users</a>
-    <a href="/private/labtests">Labtests</a>
-    <a href="/private/access-control">Access Control</a>
+    {#each links as link }
+        <a href={link.path}>{link.name}</a>
+    {/each}
 </nav>

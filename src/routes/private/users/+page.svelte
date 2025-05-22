@@ -1,8 +1,11 @@
 <script>
 	import Table from '$lib/components/data/Table.svelte';
 	import { users } from '../../../data/users';
+    
+	import PageTitle from '$lib/components/PageTitle.svelte';
 </script>
 
+<PageTitle/>
 {#snippet header()}
 	<th>First Name</th>
 	<th>Last Name</th>

@@ -20,7 +20,7 @@
 
 <nav class="flex flex-col gap-4">
 	<div class="mb-4 flex flex-col gap-3">
-		<h4 class="text-xs text-gray-400">MENU</h4>
+		<h4 class="text-xs text-gray-400">MAIN MENU</h4>
 		{#each links as link (link.id)}
 			<a href={link.path} class="link ml-2 {$page.url.pathname === link.path ? 'text-sky-700' : ''}"
 				>{link.name}</a

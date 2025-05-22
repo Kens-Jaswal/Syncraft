@@ -3,8 +3,10 @@
 </script>
 
 <div>
-	<h1>Theme</h1>
+	<section>
+		<h1>Theme</h1>
 
-	<Camera size="24" color="black" />
-	<BadgeAlert size="24" color="red"/>
+		<Camera size="24" color="black" />
+		<BadgeAlert size="24" color="red" />
+	</section>
 </div>

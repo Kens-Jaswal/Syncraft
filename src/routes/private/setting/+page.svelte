@@ -1,1 +1,5 @@
-<h1>Setting page</h1>
+<script>
+	import PageTitle from "$lib/components/PageTitle.svelte";
+
+</script>
+<PageTitle/>

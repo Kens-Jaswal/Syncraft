@@ -1,2 +1,2 @@
-<h1>dashboard: after login</h1>
+<h2>Welcome, Admin</h2>
 

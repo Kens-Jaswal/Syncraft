@@ -3,28 +3,34 @@
 @plugin '@tailwindcss/typography';
 @plugin "daisyui";
 
-
-
 @layer utilities {
-    /* Typography */
-    h1 {
-        @apply text-4xl;
-    }
-    h2 {
-        @apply text-3xl;
-    }
-    h3 {
-        @apply text-2xl;
-    }
-    h4 {
-        @apply text-xl;
-    }
+	/* Typography */
+	h1 {
+		@apply text-4xl;
+	}
+	h2 {
+		@apply text-3xl;
+	}
+	h3 {
+		@apply text-2xl;
+	}
+	h4 {
+		@apply text-xl;
+	}
 
-    .link {
-        @apply no-underline capitalize;
-        &:hover {
-            @apply underline;
-        }
-    }
+	.link {
+		@apply capitalize no-underline;
+		&:hover {
+			@apply underline;
+		}
+	}
 
+	/* TABLE */
+	thead {
+		@apply bg-base-100 sticky top-0;
+	}
+
+	.btn:where(.btn-outline) {
+		@apply border-gray-200;
+	}
 }

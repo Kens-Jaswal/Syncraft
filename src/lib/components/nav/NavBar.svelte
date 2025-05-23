@@ -9,12 +9,12 @@
 	];
 	const linkSupports = [
 		{ id: 1, name: 'access control', path: '/private/access-control' },
-		{ id: 2, name: 'Refund', path: '/private' }
+		{ id: 2, name: 'Refund', path: '/private/not-found' }
 	];
 
 	const linkOthers = [
-		{ id: 1, name: 'Patients', path: '/private' },
-		{ id: 2, name: 'lab Reports', path: '/private/labreports' }
+		{ id: 1, name: 'Patients', path: '/private/patients' },
+		{ id: 2, name: 'lab Reports', path: '/private/not-found' }
 	];
 </script>
 

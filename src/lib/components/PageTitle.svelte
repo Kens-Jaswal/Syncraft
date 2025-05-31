@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { derived } from 'svelte/store';
 	import Button from './Button.svelte';
-	import { Plus } from 'lucide-svelte';
+	import { ArrowBigLeft, Plus, SendToBack } from 'lucide-svelte';
 	import { createEventDispatcher } from 'svelte';
 
 	const dispatch = createEventDispatcher();
@@ -15,8 +15,12 @@
 </script>
 
 <div class="flex gap-4">
+	<Button size="sm" look="circle" variant="outline" on:click={() => history.back()}>
+	<ArrowBigLeft />
+</Button>
+
 	<h3 class="mb-3">{$title}</h3>
-	<Button size="sm" look="circle" variant="outline" on:click={() => dispatch('openDrawer')}>
+	<Button size="sm" look="circle" variant="primary" on:click={() => dispatch('openDrawer')}>
 		<Plus />
 	</Button>
 </div>

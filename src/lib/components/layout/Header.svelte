@@ -1,6 +1,8 @@
 <script>
 	import { Home } from 'lucide-svelte';
 	import Drawer from '../Drawer.svelte';
+	import Button from '../Button.svelte';
+	import { goto } from '$app/navigation';
 
 	let show = false;
 
@@ -14,9 +16,9 @@
 <div class="navbar bg-base-100">
 	<div class="ml-4 flex w-full justify-between gap-6">
 		<div class="w-full">
-			<a class="btn btn-ghost btn-circle" href="/">
+			<Button look='circle' variant='ghost' on:click={() => goto('/private')}>
 				<Home size="24" color="black" />
-			</a>
+			</Button>
 			<input type="text" placeholder="Search" class="input input-bordered w-48 md:w-1/2" />
 		</div>
 	</div>

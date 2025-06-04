@@ -2,7 +2,7 @@
 	import Header from '$lib/components/layout/Header.svelte';
 	import NavBar from '$lib/components/nav/NavBar.svelte';
 	import PageTitle from '$lib/components/PageTitle.svelte';
-	import { BadgeAlert, Camera } from 'lucide-svelte';
+	import { BadgeAlert, Blocks, Camera, ChartPie, SwatchBook, TextQuote } from 'lucide-svelte';
 </script>
 
 <div class="flex">
@@ -30,28 +30,7 @@
 										type="radio"
 										value="Components Demo"
 									/>
-									<svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-										><g
-											stroke-linejoin="round"
-											stroke-linecap="round"
-											stroke-width="2"
-											fill="none"
-											stroke="currentColor"
-											><rect width="7" height="9" x="3" y="3" rx="1"></rect><rect
-												width="7"
-												height="5"
-												x="14"
-												y="3"
-												rx="1"
-											></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect
-												width="7"
-												height="5"
-												x="3"
-												y="16"
-												rx="1"
-											></rect></g
-										></svg
-									></label
+									<Blocks /></label
 								>
 								<label class="tab" title="Component Variants"
 									><input
@@ -60,20 +39,7 @@
 										type="radio"
 										value="Component Variants"
 									/>
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-4"
-										><g
-											stroke-linejoin="round"
-											stroke-linecap="round"
-											stroke-width="2.5"
-											fill="none"
-											stroke="currentColor"
-											><path d="M4 6l5.5 0"></path><path d="M4 10l5.5 0"></path><path
-												d="M4 14l5.5 0"
-											></path><path d="M4 18l5.5 0"></path><path d="M14.5 6l5.5 0"></path><path
-												d="M14.5 10l5.5 0"
-											></path><path d="M14.5 14l5.5 0"></path><path d="M14.5 18l5.5 0"></path></g
-										></svg
-									></label
+									<TextQuote /></label
 								>
 								<label class="tab" title="Color Palette"
 									><input
@@ -82,24 +48,25 @@
 										type="radio"
 										value="Color Palette"
 									/>
-									<svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-										><g
-											stroke-linejoin="round"
-											stroke-linecap="round"
-											stroke-width="2"
-											fill="none"
-											stroke="currentColor"
-											><path d="M11 17a4 4 0 0 1-8 0V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2Z"></path><path
-												d="M16.7 13H19a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H7"
-											></path><path d="M 7 17h.01"></path><path
-												d="m11 8 2.3-2.3a2.4 2.4 0 0 1 3.404.004L18.6 7.6a2.4 2.4 0 0 1 .026 3.434L9.9 19.8"
-											></path></g
-										></svg
-									></label
+									<SwatchBook /></label
 								>
 							</div>
 						</div>
 						<div class="px-8 py-6">
+							<div class='grid grid-cols-10 gap-2 my-10'>
+								<div class='bg-kens'>bg-kens</div>
+								<div class='bg-primary'>custom</div>
+								<div class='bg-primary aspect-square'>aa</div>
+								<div class='bg-secondary'>bb</div>
+								<div class='bg-accent'>cc</div>
+								<div class='bg-info'>cc</div>
+								<div class='bg-warning'>cc</div>
+								<div class='bg-success'>cc</div>
+								<div class='bg-base-100'>cc</div>
+								<div class='bg-base-200'>cc</div>
+								<div class='bg-base-300'>cc</div>
+								<div class='bg-base-content'>cc</div>
+							</div>
 							<div
 								class="text-base-content [&amp;_.carbon-responsive-wrap]:flex-nowrap! [&amp;_.carbon-responsive-wrap]:text-[11px]! [&amp;_:is(div,button)]:[transition:background-color_0ms,border-color_100ms,box-shadow_300ms,border-radius_500ms_ease-out] [&amp;>*]:mb-6 mx-auto grid gap-6 pb-20 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"
 							>
@@ -108,23 +75,7 @@
 										<div class="card-body gap-4">
 											<h2 class="flex items-center justify-between">
 												<span class="flex items-center gap-2 font-semibold"
-													><svg
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														stroke-width="1.5"
-														stroke="currentColor"
-														class="size-5 opacity-40"
-														><path
-															stroke-linecap="round"
-															stroke-linejoin="round"
-															d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
-														></path><path
-															stroke-linecap="round"
-															stroke-linejoin="round"
-															d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
-														></path></svg
-													> Preview</span
+													><ChartPie size='16'/> Preview</span
 												> <span class="link text-xs">more</span>
 											</h2>
 											<div>

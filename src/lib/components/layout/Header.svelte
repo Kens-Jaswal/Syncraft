@@ -1,8 +1,9 @@
 <script>
-	import { Home } from 'lucide-svelte';
+	import { Home, Moon, Sun } from 'lucide-svelte';
 	import Drawer from '../Drawer.svelte';
 	import Button from '../Button.svelte';
 	import { goto } from '$app/navigation';
+	import ThemeChange from '../ThemeChange.svelte';
 
 	let show = false;
 
@@ -16,13 +17,14 @@
 <div class="navbar bg-base-100">
 	<div class="ml-4 flex w-full justify-between gap-6">
 		<div class="w-full">
-			<Button look='circle' variant='ghost' on:click={() => goto('/private')}>
+			<Button look="circle" variant="ghost" on:click={() => goto('/private')}>
 				<Home size="24" color="black" />
 			</Button>
 			<input type="text" placeholder="Search" class="input input-bordered w-48 md:w-1/2" />
 		</div>
 	</div>
 	<div class="flex gap-2">
+		<ThemeChange/>
 		<div class="dropdown dropdown-end flex whitespace-nowrap">
 			<div class="mr-4 place-content-center">
 				<h4>Admin</h4>
